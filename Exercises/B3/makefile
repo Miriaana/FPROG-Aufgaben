@@ -4,5 +4,6 @@ all: sort
 	mkdir -p out
 	
 sort: .outputFolder
-	clang -std=c++17 -lstdc++ -lm sort.cpp -Wall -Wextra -Werror -o out/sort
+	g++ -std=c++17 -lstdc++ -lm sortTests.cpp -Wall -Werror -Wextra -Wno-unused-parameter -o out/sort
 	./out/sort
+
